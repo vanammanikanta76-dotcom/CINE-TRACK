@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTrack — Movie Discovery Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">🎬 CineTrack</div>
+        <div class="watchlist-counter">Watchlist: <span id="cart-count">0</span></div>
+    </header>
+
+    <div class="app-container">
+        <aside class="controls-sidebar">
+            <h3>Filters</h3>
+            <div class="control-group">
+                <label for="genre-select">Genre</label>
+                <select id="genre-select">
+                    <option value="all">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Christopher Nolan">Nolan Specials</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="sort-select">Sort By</label>
+                <select id="sort-select">
+                    <option value="default">Featured</option>
+                    <option value="rating-high">Rating (High to Low)</option>
+                    <option value="year-new">Release Year (Newest)</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="movie-display-area">
+            <div class="movie-grid" id="movie-grid">
+                </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
